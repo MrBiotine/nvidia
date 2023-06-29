@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- call font-awesome - external link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <title>My Nvidia Page</title>
+    <!-- custom CSS as last => will/might override (écraser) values -->
+    <link rel="stylesheet" href="./style/main.css" />
+</head>
+<body>
+    <div id="page-container">
+        
+        <!-- The Header with his navigation bar and his banner -->
+
+        <header>
+            <div id="menu">
+                <figure id="logo">                
+                  <img src="./img/logo-nvidia.jpg" alt="Nvidia Logo">             
+                </figure> 
+                <nav>                    
+                    <ul>
+                        <li class="navbar_link"><a href="#">Produits</a></li>
+                        <li class="navbar_link"><a href="#">Gamme Rtx</a></li>
+                        <li class="navbar_link"><a href="#">Support &amp; pilotes</a></li>
+                        <li class="navbar_link"><a href="#">Contact</a></li>
+                    </ul>                   
+                </nav>
+            </div>
+            <div id="banner-header">
+                <figure><img src="./img/banner-nvidia_rtx2060.png" alt="banner-nvidia_rtx2060"></figure>
+                <div class="overlay">
+                    <p>Plus d'informations sur la gamme GeForce RTX</p>
+                    <button class="discover">
+                        Découvrir <i class="fa-solid fa-caret-down fa-rotate-270"></i>
+                    </button>
+                </div>
+            </div> 
+        </header>
+
+        <!-- The main with his article and aside --> 
+    <div id="article-container">
+        <main>            
+                <article>
+                    <div id="article-title">
+                        <figure id="title">
+                             <img src="./img/logo-nvidia_small.jpg" alt="small Nvidia logo">
+                        </figure>
+                        <h1>La puissance, tout simplement.</h1>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero earum laboriosam ipsum architecto error voluptatem non voluptates accusamus rerum praesentium voluptate, ex porro odio libero fugiat quasi inventore quibusdam ab quis, corporis optio pariatur quas consectetur. Molestiae tenetur fuga delectus maiores nam et unde minus alias dolorum! Labore, blanditiis ea? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, deleniti iste corrupti cum nobis quos suscipit consectetur porro fugiat earum esse eaque perferendis sint asperiores architecto eos error possimus fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid cum excepturi, nihil deserunt numquam quibusdam, ratione quae veritatis unde animi ex molestias eius, sequi tempora maxime possimus. </p>
+                    <p>adipisci quia quae nam eos atque necessitatibus doloribus. Provident, ratione recusandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Non voluptas quisquam culpa ad nemo, error quibusdam possimus libero, iure corporis ab sint vero ratione dolor veniam pariatur eaque similique ipsa placeat! Harum saepe blanditiis quod fugiat eos veritatis repellat natus sed voluptas! Iste commodi beatae numquam cum dolore laudantium, nulla deleniti sit adipisci esse minima, quisquam veniam voluptates optio dolorum quaerat!Unde quo consectetur, quidem minima numquam dignissimos quibusdam impedit iusto maiores laborum </p>
+                    <p>Lorempsum do ilor sit amet, consectetur adipisicing elit. Voluptatibus accusantium libero maiores quos dolorum, harum eos nostrum consectetur. Porro, expedita.Labore nemo fuga porro mollitia repellendus modi ducimus tenetur, eum animi aliquid reiciendis reprehenderit numquam dolor libero vero vitae illum dolore quis nulla. Quos excepturi, tenetur voluptatem laboriosam, molestias ad adipisci nam quaerat, aspernatur repellat quis obcaecati magnam. Incidunt.</p>                 
+                        
+                </article>
+                    <aside>
+                        <h2>À propos</h2>
+                        <figure id="aside-img">
+                            <img src="./img/logo-dark-nvidia.jpg" alt="dark Nvidia logo">
+                        </figure>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo molestiae molestias distinctio. Quas sunt, magni cumque minima quasi labore architecto reiciendis iste porro sequi error iure nulla dolore velit ducimus a modi! Ea illo omnis nobis vero numquam facere animi, perspiciatis quia molestias! At, culpa. Voluptatem laudantium amet nobis culpa!</p>
+                        <div id="icons-rs">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-snapchat"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                    </aside>            
+            
+        </main>
+        <div id="triangle-down">
+                <i class="fa-solid fa-caret-down"></i>          
+        </div>
+    </div>
+        <!-- The footer-->
+
+        <footer id="footer-container">
+            <div class="footer-panel">
+                <h3>Newsletter</h3> 
+                <form method="post" action="#">  
+                    <input type="text" id="Nom" name="Nom" placeholder="Nom">
+                    <div class="align-button">
+                        <input type="email" id="Email" name="Email" placeholder="Email">
+                        <button>S'inscrire</button>
+                    </div>
+                </form>
+            </div>
+            <div class="footer-panel">
+                <h3>Galerie</h3>
+                <figure class="galery-img">
+                    <a href="#" target="_blank"><img src="./img/logo-white-nvidia.jpg" alt="Nvidia Logo"></a>
+                    <a href="#" target="_blank"><img src="./img/rtx1.png" alt="RTX Icon1"></a>
+                    <a href="#" target="_blank"><img src="./img/rtx2.png" alt="RTX Icon2"></a>
+                    <a href="#" target="_blank"><img src="./img/rtx3.png" alt="RTX Icon3"></a>
+                </figure>
+            </div>
+            <div class="footer-panel">
+                <h3>Partenaires</h3>
+                <figure class="galery-img">
+                    <a href="#" target="_blank"><img src="./img/logo-intel.png" alt="Intel Logo"></a>
+                    <a href="#" target="_blank"><img src="./img/logo-asus.png" alt="Assus Logo"></a>
+                    <a href="#" target="_blank"><img src="./img/logo-ea.png" alt="AE Logo"></a>
+                </figure>
+            </div>         
+        </footer>
+
+        <!-- Fin -->
+
+    </div>
+        
+                       
+</body>                          
+</html>              
+          
+         
+  
+            
+
+              
+                
+                    
+                                     
+                          
+                        
+                    
+                
+            
+
+            
+        
+    
+
