@@ -61,10 +61,19 @@ nav > ul {
     gap: 110px;       
 }
 
+
+
 .navbar_link {
     color: black;
     padding: 15px;
     text-transform: uppercase;
+}
+
+/* Dropdown Content - contain the link menus - it will be hidden for smartphone) */
+.dropdown-content{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
 }
 
 #banner-header > figure {
@@ -224,6 +233,9 @@ aside h2 {
         flex-wrap: wrap;
         gap: unset;       
     }
+    .dropdown-content{
+        gap: unset;
+    }
     
     .align-button {
         display: flex;
@@ -292,7 +304,13 @@ aside h2 {
 
 }
 /*smartphone*/
-@media (max-width: 412px) {
+@media (max-width: 600px) {
+    #menu {
+        display: flex;
+        flex-direction: row;        
+        gap: 25px;;        
+    }
+
     #logo {
         height: 40px ;
     }
@@ -305,8 +323,31 @@ aside h2 {
         gap: unset;       
     }
     .navbar_link {
-        padding: 2px 5px 2px 0px;       
+        padding: 5px;       
     }
+    /* The class container  - needed to position the dropdown content */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        top:27px;
+        background-color: #f1f1f1;
+        min-width: 225px;
+        box-shadow: 0px 8px 16px 0px rgba(222, 212, 212, 0.878);
+        z-index: 1;
+      }
+
+      .dropdown-content a:hover {color: #f1f1f1;background-color: var(--color-green);}
+
+      /* Show the dropdown menu on hover */
+      .dropdown:hover .dropdown-content {display: block;}
+      /* Change the background color of the .drop_link element when the dropdown content is shown */
+      .dropdown:hover .drop_link {color: #f1f1f1;background-color: var(--color-green);}
+
     .discover{
         padding: 1px;
     }
